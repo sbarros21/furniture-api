@@ -38,11 +38,13 @@ release/*: preparación de versiones.
 ---
 
 Java 17
+
 Spring Boot
+
 MongoDB
-Swagger (OpenAPI)
+
 JaCoCo (cobertura de pruebas)
-SonarQube (análisis estático de código)
+
 Maven (gestión de dependencias y build)
 
 
@@ -76,9 +78,7 @@ https://lucid.app/lucidchart/ae55851d-b8ce-4979-ba5a-46065daf1303/edit?viewport_
 
 ### Patrones
 
----
-
-1. Abstract Factory
+Abstract Factory
 
 Este patrón creacional es ideal para crear familias de objetos relacionados, en este caso distintos tipos muebles con diferentes estilos. Como hay muchas combinaciones posibles de muebles para adquirir, con este patrón se pueden crear de una manera adecuada. Ademas, nos ayuda a cumplir los principios SOLID ya que, por ejemplo, si quiero agregar un nuevo tipo de mueble o un nuevo estilo para los muebles existentes, no debo modificar el codigo existente, sino extenderlo creando clases nuevas. De igual forma, se separana las responsabilidades para cumplir con el principio de reponsabilidad unica, donde cada clase tendra solo una responsabilidad. Tambien nos evitamos que el usuario dependa de interfaces que no utiliza por medio de este patrón.
 

@@ -9,7 +9,7 @@ La dirección de la empresa ha confiado en usted para diseñar y construir una s
 
 ### Scaffolding y dependencias iniciales
 
-![alt text](spring.png)
+![alt text](/docs/images/spring.png)
 
 JUnit y Jacoco fueron añadidos como dependencias en el pom. Lombok fue agregado como dependencia al momento de generar el repositorio con spring-initialzr.
 
@@ -40,19 +40,19 @@ Maven (gestión de dependencias y build)
 
 Diagrama de contexto
 
-![alt text](rosadoDiagramaContexto.png)
+![alt text](/docs/images/rosadoDiagramaContexto.png)
 
 https://lucid.app/lucidchart/008e78bc-3130-45bc-aa62-0db68c07b82d/edit?viewport_loc=-21%2C-203%2C2107%2C904%2CHWEp-vi-RSFO&invitationId=inv_46655d2d-b141-4aa9-a35d-0c9fada0b644
 
 Diagrama de Casos de Uso
 
-![alt text](rosadoCasosDeUso.png)
+![alt text](/docs/images/rosadoCasosDeUso.png)
 
 https://lucid.app/lucidchart/c5f19fa5-6d1c-48a6-aa98-bfd931353966/edit?viewport_loc=-21%2C150%2C2074%2C890%2C.Q4MUjXso07N&invitationId=inv_a5c51ed2-dc2d-4910-bbfa-19d1e4f33ca2
 
 Diagrama de Clases preliminar
 
-![alt text](rosadoClases.png)
+![alt text](/docs/images/rosadoClases.png)
 
 https://lucid.app/lucidchart/ae55851d-b8ce-4979-ba5a-46065daf1303/edit?viewport_loc=-2412%2C-525%2C6923%2C2542%2CHWEp-vi-RSFO&invitationId=inv_28616f1e-3761-45cd-9137-f7c14378faa7
 

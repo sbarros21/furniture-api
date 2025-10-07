@@ -1,5 +1,9 @@
 ### FurniStore
 
+
+### Semana 1
+
+
 ---
 
 ### Descripción
@@ -82,3 +86,101 @@ Abstract Factory
 
 Este patrón creacional es ideal para crear familias de objetos relacionados, en este caso distintos tipos muebles con diferentes estilos. Como hay muchas combinaciones posibles de muebles para adquirir, con este patrón se pueden crear de una manera adecuada. Ademas, nos ayuda a cumplir los principios SOLID ya que, por ejemplo, si quiero agregar un nuevo tipo de mueble o un nuevo estilo para los muebles existentes, no debo modificar el codigo existente, sino extenderlo creando clases nuevas. De igual forma, se separana las responsabilidades para cumplir con el principio de reponsabilidad unica, donde cada clase tendra solo una responsabilidad. Tambien nos evitamos que el usuario dependa de interfaces que no utiliza por medio de este patrón.
 
+---
+
+### Semana 2
+
+Diagramas Actualizados
+
+Diagrama de Clases
+
+A este diagrama se añadieron y modificaron algunas clases. Primero, se modifico la clase Bill existente para añadir los atributos mencionados en el enunciado, y con el fin de aplicar el patrón Decorator, por lo cual, también se añadió la interfaz BillInterface, y la clases BillDecorator, IVA, Delivery y Discount. Además, se modificó la clase Client para incluir un poco más de información acerca de los cientes. Por último, la clase Producto se incluyo como una clase abstracta, y la clase Furniture hereda de ella, ya que esta clase es un producto en la tienda.
+
+![alt text](/docs/images/DiagramaClasesDecorator.png)
+
+Diagrama de Casos de Uso
+
+Para incluir el flujo de facturación, se extendió uno de los casos de uso del cliente. Más especificamente, luego de que un ciente realice el pedido, se incluye la generacion de la factura, el calculo del subtotal, del total y realizar el pago.
+
+![alt text](/docs/images/CasosDeUsoFlujoFacturacion.png)
+
+---
+
+### Backlog
+
+Historia de Usuario 1:
+
+Como usuario, quiero realizar el inicio de sesión, para poder utilizar las funcionalidades que ofrece el sistema FurniStore.
+
+Criterios de aceptación:
+- El sistema recibe las creedenciales del usuario y las valida. 
+
+Historia de Usuario 2:
+
+Como cliente, quiero ver el catalogo de la tienda, para poder conocer los productos que ofrece la tienda y tomar una decision acerca de mi compra.
+
+Criterios de aceptación:
+- El usuario puede ver los productos ofrecidos en el catalogo, incluyendo nombre, precio y estilo.
+
+Historia de Usuario 3:
+
+Como cliente, quiero gestionar mi carrito de compras, para añadir o quitar productos antes de realizar el pedido.
+
+Criterios de aceptación:
+- El cliente puede añadir productos a su carrito
+- El cliente puede quitar productos que esten en su carrito
+
+
+Historia de Usuario 4:
+
+Como gerente, quiero gestionar los productos que ofrece la tienda, para ofrecer a los clientes los productos adecuados que se tienen en la tienda.
+
+Criterios de aceptación:
+- El gerente puede añadir o quitar los productos ofrecidos en el catalogo.
+
+Historia de Usuario 5:
+
+Como cliente, quiero generar una factura, para poder ver en detalle el precio subtotal y total de mi pedido y efectuar el pago de mi pedido.
+
+Criterios de aceptación:
+- Se genera una factura con los productos del pedido, junto al IVA, los costos de envio y descuentos.
+
+---
+
+### Planeación del sprint
+
+HU1: Usuarios ingresan al sistema
+
+Tarea: Crear la clases Usuario, Cliente y Gerente y añadir el flujo de autenticación.
+Rama: feature/authentication
+Estimación: 1
+
+HU2: Cliente consulta el catalogo
+
+Tarea: Crear las clases Furniture y lo relacionado al patrón Abstract Factory, junto a Catalog.
+Rama: feature/catalog
+Estimación: 1
+
+HU3: Cliente gestiona el carrito de compras
+
+Tarea: Crear la clase ShoppingCart
+Rama: feature/shoppingCart
+Estimación: 1
+
+HU4: Gerente gestiona el catalogo
+
+Tarea: Implementar la clase Gerente y la lógica para que modifique el catalogo
+Rama: feature/manager
+Estimación: 1
+
+HU5: Cliente genera factura
+
+Tarea: Implementar las clases Bill y lo relacionado al patrón Decorator.
+Rama: feature/bill
+Estimación: 1
+
+### Implementación del modulo de facturación
+
+En la carpeta src/main/java/eci/edu/dosw/furniture_api se encuentra la implementacion de las clases necesarias para este modulo. Adicionalmente, con la ayuda de la IA generativa Claude, cree una clase llamada TestFurnitureSystem, para probar que funciona la implementacion realizada, en el screenshot se evidencia el output en consola.
+
+![alt text](/docs/images/outputModuloFacturacion.png)

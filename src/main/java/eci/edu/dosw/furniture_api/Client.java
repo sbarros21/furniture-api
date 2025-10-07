@@ -7,10 +7,6 @@ public class Client {
     private ShoppingCart cart;
     private String address;
 
-    public Client() {
-        this.cart = new ShoppingCart();
-    }
-
     public Client(String id, String name, String address) {
         this.id = id;
         this.name = name;
